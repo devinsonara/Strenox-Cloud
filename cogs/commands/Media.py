@@ -1,7 +1,7 @@
 """
-: ! Aegis !
-    + Discord: itsfizys
-    + Community: https://discord.gg/aerox (AeroX Development )
+: ! kc5w !
+    + Discord: kc5w
+    + Community: https://discord.gg/DNxZSJPKfA (strnox cloud )
     + for any queries reach out Community or DM me.
 """
 import discord 
@@ -405,8 +405,8 @@ class Media (commands .Cog ):
 
 
 """
-: ! Aegis !
-    + Discord: itsfizys
-    + Community: https://discord.gg/aerox (AeroX Development )
+: ! kc5w !
+    + Discord: kc5w
+    + Community: https://discord.gg/DNxZSJPKfA (strnox cloud )
     + for any queries reach out Community or DM me.
 """
