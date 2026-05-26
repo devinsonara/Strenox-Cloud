@@ -1,7 +1,7 @@
 """
 : ! Aegis !
-    + Discord: itsfizys
-    + Community: https://discord.gg/aerox (AeroX Development )
+    + Discord: kc5w
+    + Community: https://discord.gg/DNxZSJPKfA (Strenox Cloud)
     + for any queries reach out Community or DM me.
 """
 import os 
