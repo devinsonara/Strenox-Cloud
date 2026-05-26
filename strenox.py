@@ -46,13 +46,13 @@ from dotenv import load_dotenv
 
 
 def print_startup_banner ():
-    """Print the AeroX startup banner"""
+    """Print the StrenoxCloud startup banner"""
     banner = [
         "AeroX Multipurpose Bot",
         "──────────────────────────────────────",
         "System: Operational",
-        "Developer: itsfizys (AeroX Development)",
-        "Community: https://discord.gg/aerox",
+        "Developer: kc5w (Strenox owner)",
+        "Community: https://discord.gg/DNxZSJPKfA",
         "──────────────────────────────────────"
     ]
     for line in banner:
@@ -60,7 +60,7 @@ def print_startup_banner ():
 
 def print_system_ready ():
     """Print the final system ready message"""
-    logger.success("SYSTEM", "AeroX is now online and ready to serve!")
+    logger.success("SYSTEM", "Strenox is now online and ready to serve!")
 
 
 
