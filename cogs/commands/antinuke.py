@@ -13,20 +13,20 @@ from discord import ui
 
 
 DEFAULT_LIMITS ={
-'ban':3 ,
-'kick':3 ,
-'channel_create':2 ,
-'channel_delete':1 ,
-'channel_update':5 ,
-'role_create':3 ,
-'role_delete':2 ,
-'role_update':5 ,
-'member_update':5 ,
-'guild_update':2 ,
-'webhook_create':2 ,
-'webhook_delete':2 ,
-'webhook_update':3 ,
-'integration':2 ,
+'ban':0 ,
+'kick':0 ,
+'channel_create':0 ,
+'channel_delete':0 ,
+'channel_update':0 ,
+'role_create':0 ,
+'role_delete':0 ,
+'role_update':0 ,
+'member_update':0 ,
+'guild_update':0 ,
+'webhook_create':0 ,
+'webhook_delete':0 ,
+'webhook_update':0 ,
+'integration':0 ,
 'prune':1 
 }
 
@@ -217,19 +217,19 @@ class Antinuke (commands .Cog ):
         setup_container.clear_items()
         setup_container.add_item(ui.TextDisplay("# Antinuke Setup <a:gears_icon:1373946244321378447>"))
         setup_container.add_item(ui.Separator())
-        setup_container.add_item(ui.TextDisplay("<a:Yuna_loading:1372527554761855038> | Initializing Quick Setup!\n<a:Yuna_loading:1372527554761855038> Checking Yuna-bot's role position for optimal configuration..."))
+        setup_container.add_item(ui.TextDisplay("<a:Yuna_loading:1372527554761855038> | Initializing Quick Setup!\n<a:Yuna_loading:1372527554761855038> Checking strenox-bot's role position for optimal configuration..."))
         await setup_message .edit (view=setup_view)
 
         await asyncio .sleep (1 )
         setup_container.clear_items()
         setup_container.add_item(ui.TextDisplay("# Antinuke Setup <a:gears_icon:1373946244321378447>"))
         setup_container.add_item(ui.Separator())
-        setup_container.add_item(ui.TextDisplay("<a:Yuna_loading:1372527554761855038> | Initializing Quick Setup!\n<a:Yuna_loading:1372527554761855038> Checking Yuna-bot's role position for optimal configuration...\n<a:Yuna_loading:1372527554761855038> | Crafting and configuring the Yuna Unstoppable Power role..."))
+        setup_container.add_item(ui.TextDisplay("<a:Yuna_loading:1372527554761855038> | Initializing Quick Setup!\n<a:Yuna_loading:1372527554761855038> Checking sternox-bot's role position for optimal configuration...\n<a:Yuna_loading:1372527554761855038> | Crafting and configuring the strenox Unstoppable Power role..."))
         await setup_message .edit (view=setup_view)
 
         try :
           role =await ctx .guild .create_role (
-          name ="Yuna Unstoppable Power",
+          name ="Sternox Unstoppable Power",
           color =0x0ba7ff ,
           permissions =discord .Permissions (administrator =True ),
           hoist =False ,
@@ -241,7 +241,7 @@ class Antinuke (commands .Cog ):
           setup_container.clear_items()
           setup_container.add_item(ui.TextDisplay("# Antinuke Setup <a:gears_icon:1373946244321378447>"))
           setup_container.add_item(ui.Separator())
-          setup_container.add_item(ui.TextDisplay("<a:Yuna_loading:1372527554761855038> | Initializing Quick Setup!\n<a:Yuna_loading:1372527554761855038> Checking Yuna-bot's role position for optimal configuration...\n<a:Yuna_loading:1372527554761855038> | Crafting and configuring the Yuna Unstoppable Power role...\n<:icon_danger:1373170993236803688> | Setup failed: Insufficient permissions to create role."))
+          setup_container.add_item(ui.TextDisplay("<a:Yuna_loading:1372527554761855038> | Initializing Quick Setup!\n<a:Yuna_loading:1372527554761855038> Checking Strenox-bot's role position for optimal configuration...\n<a:Yuna_loading:1372527554761855038> | Crafting and configuring the Yuna Unstoppable Power role...\n<:icon_danger:1373170993236803688> | Setup failed: Insufficient permissions to create role."))
           await setup_message .edit (view=setup_view)
           return 
         except discord .HTTPException as e :
@@ -256,7 +256,7 @@ class Antinuke (commands .Cog ):
         setup_container.clear_items()
         setup_container.add_item(ui.TextDisplay("# Antinuke Setup <a:gears_icon:1373946244321378447>"))
         setup_container.add_item(ui.Separator())
-        setup_container.add_item(ui.TextDisplay("<a:Yuna_loading:1372527554761855038> | Initializing Quick Setup!\n<a:Yuna_loading:1372527554761855038> Checking Yuna-bot's role position for optimal configuration...\n<a:Yuna_loading:1372527554761855038> | Crafting and configuring the Yuna Unstoppable Power role...\n<a:Yuna_loading:1372527554761855038> Ensuring precise placement of the Yuna Unstoppable Power role..."))
+        setup_container.add_item(ui.TextDisplay("<a:Yuna_loading:1372527554761855038> | Initializing Quick Setup!\n<a:Yuna_loading:1372527554761855038> Checking sternox-bot's role position for optimal configuration...\n<a:Yuna_loading:1372527554761855038> | Crafting and configuring the strenox Unstoppable Power role...\n<a:Yuna_loading:1372527554761855038> Ensuring precise placement of the strenox Unstoppable Power role..."))
         await setup_message .edit (view=setup_view)
         try :
           await ctx .guild .edit_role_positions (positions ={role :1 })
@@ -264,14 +264,14 @@ class Antinuke (commands .Cog ):
           setup_container.clear_items()
           setup_container.add_item(ui.TextDisplay("# Antinuke Setup <a:gears_icon:1373946244321378447>"))
           setup_container.add_item(ui.Separator())
-          setup_container.add_item(ui.TextDisplay("<a:Yuna_loading:1372527554761855038> | Initializing Quick Setup!\n<a:Yuna_loading:1372527554761855038> Checking Yuna-bot's role position for optimal configuration...\n<a:Yuna_loading:1372527554761855038> | Crafting and configuring the Yuna Unstoppable Power role...\n<a:Yuna_loading:1372527554761855038> Ensuring precise placement of the Yuna Unstoppable Power role...\n<:icon_danger:1373170993236803688> | Setup failed: Insufficient permissions to move role."))
+          setup_container.add_item(ui.TextDisplay("<a:Yuna_loading:1372527554761855038> | Initializing Quick Setup!\n<a:Yuna_loading:1372527554761855038> Checking strenox-bot's role position for optimal configuration...\n<a:Yuna_loading:1372527554761855038> | Crafting and configuring the Yuna Unstoppable Power role...\n<a:Yuna_loading:1372527554761855038> Ensuring precise placement of the sternox Unstoppable Power role...\n<:icon_danger:1373170993236803688> | Setup failed: Insufficient permissions to move role."))
           await setup_message .edit (view=setup_view)
           return 
         except discord .HTTPException as e :
           setup_container.clear_items()
           setup_container.add_item(ui.TextDisplay("# Antinuke Setup <a:gears_icon:1373946244321378447>"))
           setup_container.add_item(ui.Separator())
-          setup_container.add_item(ui.TextDisplay(f"<a:Yuna_loading:1372527554761855038> | Initializing Quick Setup!\n<a:Yuna_loading:1372527554761855038> Checking Yuna-bot's role position for optimal configuration...\n<a:Yuna_loading:1372527554761855038> | Crafting and configuring the Yuna Unstoppable Power role...\n<a:Yuna_loading:1372527554761855038> Ensuring precise placement of the Yuna Unstoppable Power role...\n<:icon_danger:1373170993236803688> | Setup failed: HTTPException: {e}."))
+          setup_container.add_item(ui.TextDisplay(f"<a:Yuna_loading:1372527554761855038> | Initializing Quick Setup!\n<a:Yuna_loading:1372527554761855038> Checking strenox-bot's role position for optimal configuration...\n<a:Yuna_loading:1372527554761855038> | Crafting and configuring the strenox Unstoppable Power role...\n<a:Yuna_loading:1372527554761855038> Ensuring precise placement of the strenox Unstoppable Power role...\n<:icon_danger:1373170993236803688> | Setup failed: HTTPException: {e}."))
           await setup_message .edit (view=setup_view)
           return 
 
@@ -279,14 +279,14 @@ class Antinuke (commands .Cog ):
         setup_container.clear_items()
         setup_container.add_item(ui.TextDisplay("# Antinuke Setup <a:gears_icon:1373946244321378447>"))
         setup_container.add_item(ui.Separator())
-        setup_container.add_item(ui.TextDisplay("<a:Yuna_loading:1372527554761855038> | Initializing Quick Setup!\n<a:Yuna_loading:1372527554761855038> Checking Yuna-bot's role position for optimal configuration...\n<a:Yuna_loading:1372527554761855038> | Crafting and configuring the Yuna Unstoppable Power role...\n<a:Yuna_loading:1372527554761855038> Ensuring precise placement of the Yuna Unstoppable Power role...\n<a:Yuna_loading:1372527554761855038> | Safeguarding your changes..."))
+        setup_container.add_item(ui.TextDisplay("<a:Yuna_loading:1372527554761855038> | Initializing Quick Setup!\n<a:Yuna_loading:1372527554761855038> Checking strenox-bot's role position for optimal configuration...\n<a:Yuna_loading:1372527554761855038> | Crafting and configuring the strenox Unstoppable Power role...\n<a:Yuna_loading:1372527554761855038> Ensuring precise placement of the strenox Unstoppable Power role...\n<a:Yuna_loading:1372527554761855038> | Safeguarding your changes..."))
         await setup_message .edit (view=setup_view)
 
         await asyncio .sleep (1 )
         setup_container.clear_items()
         setup_container.add_item(ui.TextDisplay("# Antinuke Setup <a:gears_icon:1373946244321378447>"))
         setup_container.add_item(ui.Separator())
-        setup_container.add_item(ui.TextDisplay("<a:Yuna_loading:1372527554761855038> | Initializing Quick Setup!\n<a:Yuna_loading:1372527554761855038> Checking Yuna-bot's role position for optimal configuration...\n<a:Yuna_loading:1372527554761855038> | Crafting and configuring the Yuna Unstoppable Power role...\n<a:Yuna_loading:1372527554761855038> Ensuring precise placement of the Yuna Unstoppable Power role...\n<a:Yuna_loading:1372527554761855038> | Safeguarding your changes...\n<a:Yuna_loading:1373173756113195081> | Activating the Antinuke Modules for enhanced security...!!"))
+        setup_container.add_item(ui.TextDisplay("<a:Yuna_loading:1372527554761855038> | Initializing Quick Setup!\n<a:Yuna_loading:1372527554761855038> Checking strenox-bot's role position for optimal configuration...\n<a:Yuna_loading:1372527554761855038> | Crafting and configuring the strenox Unstoppable Power role...\n<a:Yuna_loading:1372527554761855038> Ensuring precise placement of the strenox Unstoppable Power role...\n<a:Yuna_loading:1372527554761855038> | Safeguarding your changes...\n<a:Yuna_loading:1373173756113195081> | Activating the Antinuke Modules for enhanced security...!!"))
         await setup_message .edit (view=setup_view)
 
         await self .db .execute ('INSERT OR REPLACE INTO antinuke (guild_id, status) VALUES (?, ?)',(guild_id ,True ))
@@ -335,7 +335,7 @@ class Antinuke (commands .Cog ):
         container.add_item(ui.Separator())
 
         # Footer
-        footer_info = "Successfully Enabled Antinuke for this server | Powered by AeroX Development"
+        footer_info = "Successfully Enabled Antinuke for this server | Powered by strenox cloud"
         container.add_item(ui.TextDisplay(footer_info))
 
         # Add button
