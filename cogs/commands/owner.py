@@ -340,7 +340,7 @@ class Owner (commands .Cog ):
 
 
         embed =discord .Embed (
-        title ="🌸 Yuna Update Time 🌸",
+        title ="🌸 Strenox Cloud Update Time 🌸",
         description =message ,
         color =0x00d4ff ,
         timestamp =discord .utils .utcnow ()
