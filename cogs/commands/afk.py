@@ -1,7 +1,7 @@
 """
-: ! Aegis !
-    + Discord: itsfizys
-    + Community: https://discord.gg/aerox (AeroX Development )
+: ! kc5w !
+    + Discord: kc5w
+    + Community: https://discord.gg/DNxZSJPKfA (strenox cloud)
     + for any queries reach out Community or DM me.
 """
 import discord 
@@ -220,8 +220,8 @@ class afk (commands .Cog ):
 
 
 """
-: ! Aegis !
-    + Discord: itsfizys
-    + Community: https://discord.gg/aerox (AeroX Development )
+: ! kc5w !
+    + Discord: kc5w
+    + Community: https://discord.gg/DNxZSJPKfA (strenox cloud )
     + for any queries reach out Community or DM me.
 """
